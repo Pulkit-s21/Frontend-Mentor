@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification Page</title>
+  </head>
+  <body class="container mx-auto bg-secondary-400">
+    
+    <main>
+      <div class="
+      mx-auto
+      max-w-[800px]
+      bg-white
+      p-4
+      flex 
+      flex-col
+      gap-6
+      ">
+
+      <!-- Top part -->
+        <div class="
+        flex
+        justify-between
+        p-2
+        ">
+          <div class="flex gap-2 items-center">
+            <h2 class="
+            text-lg
+            md:text-xl
+            text-secondary-900 
+            font-extrabold
+            ">Notifications</h2>
+
+            <p class="
+            number
+            text-lg
+            text-white 
+            bg-primary-blue 
+            font-extrabold
+            py-1 
+            px-3
+            rounded-md
+            ">3</p>
+          </div>
+
+          <button class="
+          text-md
+          md:text-xl
+          font-medium
+          text-secondary-800
+          hover:text-primary-blue
+          transition-all
+          ">
+            Mark all as read
+          </button>
+        </div>
+      
+      <!-- Notification div -->
+        <div class="
+        flex
+        flex-col
+        gap-4
+        ">
+        
+          <!-- notification 1 -->
+            <div class="
+            new
+            bg-secondary-400
+            flex
+            gap-4
+            py-4
+            px-2
+            ">
+
+              <div class="rounded-md w-20">
+                <img src="/images/avatar-mark-webber.webp" alt="Mark Webber">
+              </div>
+
+              <div class="flex flex-col gap-1 text-secondary-800 text-lg">
+                <p>
+                  <span class="
+                  text-secondary-900 
+                  font-bold
+                  cursor-pointer
+                  hover:text-primary-blue
+                  transition-all
+                  ">Mark Webber</span> reacted to your recent post <span class="
+                  font-medium 
+                  text-lg
+                  text-secondary-800
+                  cursor-pointer
+                  hover:text-primary-blue
+                  transition-all
+                  ">My first tournament today!</span> <i class="fa-solid fa-circle"></i>
+                </p>
+                <p class="">1m ago</p>
+              </div>
+
+            </div>
+
+          <!-- notification 2 -->
+            <div class="
+            new
+            bg-secondary-400
+            flex
+            gap-4
+            py-4
+            px-2
+            ">
+
+              <div class="rounded-md w-10 md:w-20">
+                <img src="/images/avatar-angela-gray.webp" alt="Angela Gray">
+              </div>
+
+              <div class="flex flex-col gap-1 text-secondary-800 text-lg">
+                <p>
+                  <span class="
+                  text-secondary-900 
+                  font-bold text-lg
+                  cursor-pointer
+                  hover:text-primary-blue
+                  transition-all
+                  ">Angela Gray</span> followed you <i class="fa-solid fa-circle"></i>
+                </p>
+                <p class="">5m ago</p>
+              </div>
+
+            </div>
+        
+          <!-- notification 3 -->
+          <div class="
+          new
+          bg-secondary-400
+          flex
+          gap-4
+          py-4
+          px-2
+          ">
+
+            <div class="rounded-md w-16 md:w-20">
+              <img src="/images/avatar-jacob-thompson.webp" alt="Jacob Thompson">
+            </div>
+
+            <div class="flex flex-col gap-1 text-secondary-800 text-lg">
+              <p>
+                <span class="
+                text-secondary-900 
+                font-bold
+                cursor-pointer
+                hover:text-primary-blue
+                transition-all
+                ">Jacob Thompson</span> has joined your group <span class="
+                font-bold 
+                text-lg
+                cursor-pointer
+                text-primary-blue
+                transition-all
+                ">Chess Club</span> <i class="fa-solid fa-circle"></i>
+              </p>
+              <p class="">1 day ago</p>
+            </div>
+
+          </div>
+        
+          <!-- notification 4 -->
+          <div class="
+          flex
+          gap-4
+          py-4
+          px-2
+          ">
+
+            <div class="rounded-md w-44 md:w-24">
+              <img src="/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin">
+            </div>
+
+            <div class="flex flex-col gap-1 text-secondary-800 text-lg">
+              <p>
+                <span class="
+                text-secondary-900 
+                font-bold
+                cursor-pointer
+                hover:text-primary-blue
+                transition-all
+                ">Rizky Hassanuddin</span> sent you a private message
+              </p>
+              <p class="">5 day ago</p>
+
+              <div class="
+              border 
+              border-secondary-600 
+              p-4
+              bg-white
+              hover:bg-secondary-500
+              cursor-pointer
+              transition-all
+              ">
+                <p class="
+                text-secondary-800
+                ">Hello, thanks for setting up the Chess Club. i've been a member for a few weeks now and I'm already having lots of fun and improving my game. </p>
+              </div>
+            </div>
+
+          </div>
+        
+          <!-- notification 5 -->
+          <div class="
+          flex
+          gap-4
+          py-4
+          px-2
+          ">
+
+            <div class="rounded-md w-20">
+              <img src="/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+            </div>
+
+            <div class="flex flex-col gap-1 text-secondary-800 text-lg">
+              <p>
+                <span class="
+                text-secondary-900 
+                font-bold
+                cursor-pointer
+                hover:text-primary-blue
+                transition-all
+                ">Kimberly Smith</span> commented on your picture
+              </p>
+              <p class="">1 week ago</p>
+            </div>
+
+            <div>
+              <img src="/images/image-chess.webp" class="md:ml-12" alt="">
+            </div>
+
+          </div>
+     
+          <!-- notification 6 -->
+          <div class="
+          flex
+          gap-4
+          py-4
+          px-2
+          ">
+
+            <div class="rounded-md w-28 md:w-20">
+              <img src="/images/avatar-nathan-peterson.webp" alt="Nathan Peterson">
+            </div>
+
+            <div class="flex flex-col gap-1 text-secondary-800 text-lg">
+              <p>
+                <span class="
+                text-secondary-900 
+                font-bold
+                cursor-pointer
+                hover:text-primary-blue
+                transition-all
+                ">Nathan Peterson</span> reacted to your recent post <span class="
+                font-medium 
+                text-lg
+                text-secondary-800
+                cursor-pointer
+                hover:text-primary-blue
+                transition-all
+                ">5 end-game strategies to increase your win rate</span>
+              </p>
+              <p class="">2 weeks ago</p>
+            </div>
+
+          </div>
+
+          <!-- notification 7 -->
+          <div class="
+          flex
+          gap-4
+          py-4
+          px-2
+          ">
+
+            <div class="rounded-md w-12 md:w-20">
+              <img src="/images/avatar-anna-kim.webp" alt="Anna Kim">
+            </div>
+
+            <div class="flex flex-col gap-1 text-secondary-800 text-lg">
+              <p>
+                <span class="
+                text-secondary-900 
+                font-bold
+                cursor-pointer
+                hover:text-primary-blue
+                transition-all
+                ">Anna Kim</span> left the group <span class="
+                font-bold 
+                text-lg
+                cursor-pointer
+                text-primary-blue
+                transition-all
+                ">Chess Club</span>
+              </p>
+              <p class="">2 weeks ago</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/4eaa959a81.js" crossorigin="anonymous"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
