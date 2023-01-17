@@ -1,0 +1,29 @@
+@use '../util';
+@use '../globals/colors';
+
+html{
+     box-sizing: border-box;
+     font-size: 100%;
+}
+
+*,
+*::before,
+*::after{
+     margin: 0;
+     padding: 0;
+     box-sizing: inherit;
+}
+
+body{
+     background: url('/images/bg-intro-desktop.png') colors.$primary-red;
+     font-family: util.$font;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+
+ul li{
+     list-style-type: none;
+}

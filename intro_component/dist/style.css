@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("/images/bg-intro-desktop.png") hsl(0deg, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+p {
+  margin-top: 0;
+}
+
+button {
+  width: 100%;
+  font-size: 1.15rem;
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.3em;
+  margin-bottom: 1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+}
+@media (min-width: 62.5em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+.grid__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+@media (min-width: 62.5em) {
+  .grid__text {
+    justify-content: center;
+  }
+}
+.grid__text h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5em;
+}
+@media (min-width: 39.5em) {
+  .grid__text h1 {
+    font-size: 4em;
+    max-width: 20ch;
+  }
+}
+.grid__text p {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+@media (min-width: 39.5em) {
+  .grid__text p {
+    font-size: 1.35em;
+    max-width: 50ch;
+  }
+}
+.grid__form {
+  margin: 0 auto;
+}
+.grid__form .form-container {
+  display: flex;
+  flex-direction: column;
+}
+.grid__form .form-container .free-btn {
+  background-color: hsl(248deg, 32%, 49%);
+}
+@media (min-width: 39.5em) {
+  .grid__form .form-container .free-btn {
+    padding: 1.2em;
+  }
+}
+.grid__form .form-container .form-content {
+  background-color: hsl(0deg, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 0.3em;
+}
+@media (min-width: 39.5em) {
+  .grid__form .form-container .form-content {
+    padding: 1.75em;
+  }
+}
+.grid__form .form-container .form-content input {
+  margin: 0.5em 0;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border-radius: 0.2em;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  outline: none;
+}
+@media (min-width: 39.5em) {
+  .grid__form .form-container .form-content input {
+    padding: 1em;
+    font-size: 1.2rem;
+  }
+}
+.grid__form .form-container .form-content input::-moz-placeholder {
+  color: hsl(249deg, 10%, 26%);
+}
+.grid__form .form-container .form-content input:-ms-input-placeholder {
+  color: hsl(249deg, 10%, 26%);
+}
+.grid__form .form-container .form-content input::placeholder {
+  color: hsl(249deg, 10%, 26%);
+}
+.grid__form .form-container .form-content input:nth-child(1),
+.grid__form .form-container .form-content input:nth-child(2) {
+  text-transform: capitalize;
+}
+.grid__form .form-container .form-content input:focus,
+.grid__form .form-container .form-content input:active,
+.grid__form .form-container .form-content input:visited {
+  color: hsl(0deg, 100%, 74%);
+}
+.grid__form .form-container .form-content .submit {
+  background-color: hsl(154deg, 59%, 51%);
+  padding: 0.75rem 0.5rem;
+  margin-top: 0.5em;
+}
+@media (min-width: 39.5em) {
+  .grid__form .form-container .form-content .submit {
+    padding: 1em;
+    margin: 1.5em 0;
+  }
+}
+.grid__form .form-container .form-content p {
+  max-width: 95%;
+  text-align: center;
+  font-size: 0.85em;
+  color: hsl(246deg, 25%, 77%);
+}
+.grid__form .form-container .form-content p span {
+  color: hsl(0deg, 100%, 74%);
+}/*# sourceMappingURL=style.css.map */
