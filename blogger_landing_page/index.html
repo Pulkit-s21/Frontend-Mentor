@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogr Landing Page</title>
+  </head>
+  <body class="font-Ubuntu">
+
+    <!-- keeping navBar and top part in same div cz of the bg-pattern and clr -->
+    <div class="
+    both 
+    bg-primary-gradientRed
+    bg-no-repeat
+    bg-cover
+    bg-center
+    bg-[url('/images/bg-pattern-intro-desktop.svg')]
+    ">
+          <!-- ! NavBar -->
+          <nav class="
+          mx-auto
+          p-4
+          ">
+            <div class="
+            container
+            flex
+            justify-between
+            items-center
+            mx-auto
+            z-50
+            ">
+
+              <a class="
+              lg:absolute
+              lg:left-1/2
+              lg:-translate-x-1/2
+              lg:top-9
+              hover:opacity-75
+              transition-opacity
+              " href="/" aria-label="Go to homepage">
+                <img src="/images/logo.svg" width="120" alt="Logo">
+              </a>
+              
+              <button class="
+              lg:hidden
+              hover:opacity-50
+              " id="openMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+
+              <button class="
+              hidden
+              lg:hidden
+              hover:opacity-50
+              " id="closeMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>          
+              </button>
+
+              <div class="
+              bg-white
+              hidden
+              flex-col
+              gap-4
+              absolute
+              right-0
+              left-0
+              top-16
+              p-4
+              items-center
+              text-center
+              shadow-xl
+              lg:bg-transparent
+              lg:shadow-none
+              lg:flex
+              lg:flex-row
+              lg:static
+              lg:justify-between
+              lg:w-full
+              " role="menuBar">
+              
+              <a class="
+              link-1
+              text-lg
+              lg:text-xl
+              mx-4
+              border-white
+              hover:border-neutral-900
+              text-neutral-700
+              lg:text-white
+              hover:text-neutral-900
+              transition-all
+              " href="/">Product</a>
+              
+              <a class="
+              link-2
+              text-lg
+              lg:text-xl
+              mx-4
+              border-white
+              hover:border-neutral-900
+              text-neutral-700
+              lg:text-white
+              hover:text-neutral-900
+              transition-all
+              " href="/">Company</a>
+              
+              <a class="
+              link-3
+              text-lg
+              lg:text-xl
+              mx-4
+              lg:mr-auto
+              border-white
+              hover:border-neutral-900
+              text-neutral-700
+              lg:text-white
+              hover:text-neutral-900
+              transition-all
+              " href="/">Connect</a>
+              
+              <a class="
+              link-4
+              text-lg
+              lg:text-xl
+              lg:mr-4
+              border-white
+              hover:border-neutral-900
+              text-neutral-700
+              lg:text-white
+              hover:text-neutral-900
+              transition-all
+              " href="/">Login</a>
+              
+              <a class="
+              link-5
+              text-lg
+              font-semibold
+              lg:text-xl
+              mx-4
+              text-white
+              lg:text-primary-red
+              bg-primary-cyan
+              px-4
+              py-2
+              rounded-full
+              bg-primary-red
+              lg:bg-white
+              hover:shadow-md
+              transition-all
+              " href="/">Sign Up</a>
+              
+              </div>
+
+            </div>
+          </nav>
+
+          <!-- * Top part -->
+          <div class="
+          p-8
+          py-24
+          flex
+          flex-col
+          gap-4
+          justify-between
+          items-center
+          text-center
+          ">
+          
+            <h1 class="
+            text-white
+            text-3xl
+            md:text-5xl
+            lg:text-7xl
+            ">A modern publishing platform</h1>
+    
+            <p class="
+            text-gray-100
+            text-lg
+            md:text-xl
+            lg:text-2xl
+            ">Grow your audience and build your online brand</p>
+    
+            <div class="
+            flex
+            gap-4
+            ">
+    
+              <a class="
+              text-primary-red
+              font-light
+              text-lg
+              lg:text-2xl
+              bg-white
+              border-2
+              border-transparent
+              hover:text-white
+              hover:bg-transparent
+              hover:border-white
+              transition-all
+              px-4
+              py-2
+              rounded-full
+              " href="/">
+                Start for free
+              </a>
+      
+              <a class="
+              text-white
+              text-lg
+              lg:text-2xl
+              bg-transparent
+              px-4
+              py-2
+              rounded-full
+              border-2
+              border-gray-100
+              " href="/">
+                Learn More
+              </a>
+    
+            </div>
+    
+          </div>
+
+    </div>
+
+    <!-- ! Main -->
+    <main>
+    <!-- * 2nd part -->
+      <div class="
+      flex
+      flex-col
+      text-center
+      py-6
+      gap-4
+      ">
+
+        <p class="
+        text-3xl
+        lg:text-6xl
+        text-primary-darkBlue
+        ">Designed for future</p>
+
+
+        <!-- TODO: Make the images on top of each other as per the design -->
+        <!-- ? the image and the text div -->
+        <div class="
+        flex
+        flex-col
+        lg:flex-row-reverse
+        lg:justify-evenly
+        gap-6
+        text-center
+        lg:text-start
+        ">
+
+          <!-- image div -->
+          <div class="flex flex-1 justify-center lg:justify-end">
+            <!-- <img class="max-w-md" src="/images/bg-pattern-circles.svg" alt=""> -->
+            <img class="md:w-[500px] lg:w-[700px]" src="/images/illustration-editor-mobile.svg" alt="">
+          </div>
+          
+          <!-- text div -->
+          <div class="
+          flex
+          flex-1
+          items-center
+          justify-center
+          flex-col
+          px-10
+          py-6
+          gap-8
+          ">
+
+          <div class="
+          flex
+          flex-col
+          items-center
+          lg:items-start
+          gap-3
+          ">
+            <p class="
+            text-2xl
+            md:text-3xl
+            lg:text-4xl
+            text-primary-darkBlue
+            ">Introducing an extensible editor</p>
+            <p class="
+            text-md
+            md:text-lg
+            text-secondary-700
+            max-w-md
+            md:max-w-2xl
+            ">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+              change the looks of a blog.</p>
+          </div>
+
+          <div class="
+          flex
+          flex-col
+          items-center
+          lg:items-start
+          gap-3
+          ">
+            <p class="
+            text-2xl
+            md:text-3xl
+            lg:text-4xl
+            text-primary-darkBlue
+            ">Robust content management</p>
+            <p class="
+            text-md
+            md:text-lg
+            text-secondary-700
+            max-w-md
+            md:max-w-2xl
+            ">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    <!-- * 3rd part -->
+      <div class="
+      bg-gradient-to-r 
+      from-primary-gradientBlue 
+      to-primary-desatBlue
+      text-white
+      flex
+      flex-col
+      items-center
+      lg:flex-row
+      gap-2
+      rounded-tr-[5rem]
+      rounded-bl-[5rem]
+      ">
+
+        <img class="md:w-[500px] lg:w-[600px]" src="/images/illustration-phones.svg" alt="">
+
+        <!-- text div -->
+        <div class="
+        flex 
+        flex-1
+        flex-col
+        items-center
+        justify-center
+        text-center
+        gap-4
+        p-12
+        ">
+
+          <p class="
+          font-semibold
+          font-Overpass
+          text-3xl  
+          md:text-4xl
+          lg:text-5xl
+          ">State of the Art Infrastructure</p>
+
+          <p class="
+          text-md
+          md:text-lg
+          md:max-w-lg
+          ">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        </div>
+
+      </div>
+
+    <!-- * 4th part -->
+      <div class="
+      flex
+      flex-col
+      py-6
+      ">
+
+        <!-- TODO: Make the images on top of each other as per the design -->
+        <!-- ? the image and the text div -->
+        <div class="
+        flex
+        flex-col
+        lg:flex-row
+        gap-6
+        text-center
+        lg:text-start
+        ">
+
+          <!-- image div -->
+          <div class="flex flex-1 justify-center">
+            <img class="md:w-[700px]" src="/images/illustration-laptop-mobile.svg" alt="">
+          </div>
+          
+          <!-- text div -->
+          <div class="
+          flex 
+          flex-1
+          flex-col
+          justify-center
+          items-center
+          px-10
+          py-6
+          gap-8
+          ">
+
+          <div class="
+          flex
+          flex-col
+          gap-3
+          ">
+            <p class="
+            text-3xl
+            md:text-4xl
+            lg:text-5xl
+            text-primary-darkBlue
+            ">Free, open, simple</p>
+            <p class="
+            text-md
+            md:text-lg
+            text-secondary-700
+            max-w-md
+            md:max-w-xl
+            ">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          </div>
+
+          <div class="
+          flex
+          flex-col
+          gap-3
+          ">
+            <p class="
+            text-3xl
+            md:text-4xl
+            lg:text-5xl
+            text-primary-darkBlue
+            ">Powerful tooling</p>
+            <p class="
+            text-md
+            md:text-lg
+            text-secondary-700
+            max-w-md
+            md:max-w-xl
+            ">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.</p>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    <!-- ! Footer -->
+    <footer>
+      <div class="
+      bg-secondary-900
+      rounded-tr-[5rem]
+      grid
+      grid-flow-row-dense
+      grid-cols-1
+      md:grid-cols-4
+      grid-rows-1
+      gap-4
+      p-6
+      text-white
+      place-items-center
+      items-start
+      ">
+
+        <!-- logo -->
+        <img src="/images/logo.svg" width="80" alt="">
+
+        <!-- product div -->
+        <div>
+          <ul class="text-gray-300 text-center cursor-pointer">
+            <li class="flex mb-4">
+              <h3 class="text-white text-xl">Product</h3>
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              Overview
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              Pricing
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              Marketplace
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              Features
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              Integrations
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+          </ul>
+        </div>
+
+        <!-- company div -->
+        <div>
+          <ul class="text-gray-300 text-center cursor-pointer">
+            <li class="flex mb-4">
+              <h3 class="text-white text-xl">Company</h3>
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              About
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              Team
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              Blog
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              Careers
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+          </ul>
+        </div>
+
+        <!-- Connect div -->
+        <div>
+          <ul class="text-gray-300 text-center cursor-pointer">
+            <li class="flex mb-4">
+              <h3 class="text-white text-xl">Connect</h3>
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              Contact
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              Newsletter
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+              
+            </li>
+            <li class="flex items-center gap-1 hover:text-white">
+              LinkedIn
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close hidden w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg> -->
+              
+
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
