@@ -1,0 +1,94 @@
+@use '../globals' as g;
+@use '../globals/colors' as c;
+@use '../util' as u;
+
+
+ul{
+     display: flex;
+}
+
+.grid{
+     display: grid;
+     grid-template-columns: 1fr;
+     padding: 2rem;
+
+          .top{
+               display: grid;
+               grid-template-columns: 1fr;
+
+                    .our-info{
+                         text-align: center;
+
+                              h1{
+                                   font-size: 3em;
+                                   color: c.$dark-magenta;
+                                   margin-bottom: .75em;
+                              }
+
+                              p{
+                                   font-size: 1.125em;
+                                   font-weight: u.$fw-light;
+                                   color: c.$dark-grayMagenta;
+                                   margin-bottom: .75em;
+                              }
+                    }
+
+                    .ratings{
+                              .box{
+                                   background-color: c.$light-grayMagenta;
+                                   display: flex;
+                                   flex-direction: column;
+                                   align-items: center;
+                                   padding-top: 1em;
+                                   margin: 2em 0;
+                                   border-radius: .6em;
+          
+                                        .star-area img{
+                                             margin-bottom: .75em;
+                                        }
+                                   
+                                        .text-area{
+                                             p{
+                                                  font-weight: u.$fw-bold;
+                                                  font-size: 1.2em;
+                                             }
+                                        }
+                              }
+                    }
+          }
+
+
+          .reviews{
+               display: grid;
+               grid-template-columns: 1fr;
+
+                    .review-box{
+                         background-color: c.$dark-magenta;
+                         color: c.$white;
+                         display: grid;
+                         padding: 2em;
+                         padding-top: 2em;
+                         grid-template-columns: 1fr;
+                         border-radius: .6em;
+                         margin-bottom: 1em;
+
+                              img{
+                                   max-width: 3rem;
+                                   border-radius: 50%;
+                              }
+                         
+                              .person-box{
+                                   display: grid;
+                                   grid-template-columns: 1fr 2fr;
+
+                                        .verified{
+                                             color: c.$soft-pink;
+                                        }
+
+                                             .text-box{
+                                                  margin: 2em 0;
+                                             }
+                              }
+                    }
+          }
+}
