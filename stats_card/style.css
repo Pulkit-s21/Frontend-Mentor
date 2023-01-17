@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+     --dark-blue: hsl(233, 47%, 7%);
+     --desat-blue: hsl(244, 38%, 16%);
+     --soft-violet: hsl(277, 64%, 61%);
+     --main-para: hsla(0, 0%, 100%, 0.75);
+     --stat-head: hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+     font-family: 'Inter', sans-serif;
+     font-family: 'Lexend Deca', sans-serif;
+     background-color: var(--dark-blue);
+     min-height: 100vh;
+     align-items: center;
+     display: flex;
+}
+
+.container{
+     max-width: 65rem;
+     margin: 0 auto;
+}
+
+.wrapper{
+     background-color: var(--desat-blue);
+     color: #fff;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     border-radius: 1rem;
+     margin: 2rem;
+     overflow: hidden;
+}
+
+.text-component{
+     padding: 2rem;
+}
+
+.text-component h1 span{
+     color: var(--soft-violet);
+}
+
+.text-component .sub-head{
+     margin-top: 2rem;
+     color: var(--main-para);
+}
+
+.stat-box{
+     margin-top: 2rem;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+}
+
+.stat-box .name{
+     font-size: 0.95rem;
+     color: var(--stat-head);
+}
+
+.stat-box .num{
+     font-size: 1.2rem;
+     font-weight: 700;
+}
+
+.image-component{
+     position: relative;
+}
+
+.image-component img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.image-component::after{
+     content: '';
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: hsla(277, 64%, 61%,0.55);
+}
+
+@media (max-width: 800px){
+     body{
+          text-align: center;
+     }
+
+     .container{
+          max-width: 30rem;
+          margin: 0 auto;
+     }
+     
+     .wrapper{
+          grid-template-columns: repeat(1,1fr);
+     }
+
+     .image-component{
+          order: -1;
+     }
+
+     .stat-box{
+          grid-template-columns: repeat(1,1fr);
+     }
+}
