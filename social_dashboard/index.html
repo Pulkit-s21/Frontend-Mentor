@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Dashboard</title>
+  </head>
+  <body class="
+  font-primary
+  bg-white
+  dark:bg-primary-darkBG
+  ">
+
+    <!-- dashboard div -->
+    <div class="
+    flex
+    flex-col
+    bg-lightToggle-lightTop
+    dark:bg-primary-darkTop
+    divide-y
+    divide-gray-600
+    space-y-5
+    p-4
+    md:flex-row
+    md:divide-y-0
+    md:space-y-0
+    md:justify-between
+    ">
+
+      <!-- heading div -->
+      <div class="">
+        <h1 class="
+        text-lightToggle-numClr
+        dark:text-white 
+        text-2xl 
+        font-bold
+        p-2
+        ">Social Media Dashboard</h1>
+        <p class="
+        text-lightToggle-text
+        dark:text-primary-cardText 
+        text-lg 
+        px-2
+        ">Total Followers: 23,004</p>  
+      </div>
+
+      <!-- toggle div -->
+      <div class="">
+        <div class="
+        flex 
+        justify-between 
+        p-2  
+        pr-8
+        my-8 
+        ">
+  
+          <label class="
+          hidden
+          form-check-label 
+          text-lightToggle-text
+          dark:text-primary-cardText
+          font-bold
+          text-xl
+          " for="flexSwitchCheckDefault">Dark Mode</label>
+
+          <label class="
+          form-check-label2  
+          text-primary-cardText
+          font-bold
+          text-xl
+          " for="flexSwitchCheckDefault">Light Mode</label>
+  
+          <div class="form-check form-switch">
+            <input class="
+            form-check-input 
+            appearance-none 
+            w-12 
+            ml-5 
+            rounded-full 
+            h-5 
+            align-top  
+            bg-no-repeat 
+            bg-contain 
+            bg-gray-400
+            focus:outline-none 
+            cursor-pointer 
+            shadow-sm
+            " type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- boxes div -->
+    <div class="
+    flex
+    flex-col
+    gap-8
+    p-4
+    mt-8
+    ">
+      
+      <!-- got the grid-flow-row-dense for tailwind site..it makes the layout adaptive -->
+
+      <!-- upper box div -->
+      <div class="
+      grid
+      md:grid-flow-row-dense
+      md:grid-cols-2
+      md:grid-rows-1
+      lg:grid-cols-4
+      gap-12
+      ">
+
+        <!-- box 1 -->
+        <div class="
+        bg-lightToggle-cardBG
+        text-lightToggle-text
+        dark:bg-primary-cardBG
+        dark:text-primary-cardText
+        border-t-4
+        border-primary-facebook
+        rounded-md
+        flex
+        flex-col
+        gap-6
+        items-center
+        py-6
+        ">
+          <!-- social platform -->
+          <div class="flex gap-4 items-center">
+            <img src="/images/icon-facebook.svg" alt="Facebook">
+            <p>@nathanf</p>
+          </div>
+          <!-- followers num -->
+          <div class="flex flex-col items-center gap-2">
+            <h1 class="
+            text-6xl
+            text-lightToggle-numClr 
+            dark:text-white 
+            font-bold">1987</h1>
+            <p class="uppercase text-2xl">followers</p>
+          </div>
+          <!-- update div -->
+          <div class="flex gap-2 items-center text-primary-green">
+            <img src="/images/icon-up.svg" alt="">
+            <p class="text-lg">12</p>
+            <p class="text-lg">Today</p>
+          </div>
+        </div>
+
+        <!-- box 2 -->
+        <div class="
+        bg-lightToggle-cardBG
+        text-lightToggle-text
+        dark:bg-primary-cardBG
+        dark:text-primary-cardText
+        border-t-4
+        border-primary-twitter
+        rounded-md
+        flex
+        flex-col
+        gap-6
+        items-center
+        py-6
+        ">
+          <!-- social platform -->
+          <div class="flex gap-4 items-center">
+            <img src="/images/icon-twitter.svg" alt="twitter">
+            <p>@nathanf</p>
+          </div>
+          <!-- followers num -->
+          <div class="flex flex-col items-center gap-2">
+            <h1 class="
+            text-6xl 
+            text-lightToggle-numClr
+            dark:text-white 
+            font-bold
+            ">1044</h1>
+            <p class="uppercase text-2xl">followers</p>
+          </div>
+          <!-- update div -->
+          <div class="flex gap-2 items-center text-primary-green">
+            <img src="/images/icon-up.svg" alt="">
+            <p class="text-lg">99</p>
+            <p class="text-lg">Today</p>
+          </div>
+        </div>
+
+        <!-- box 3 -->
+        <div class="
+        bg-lightToggle-cardBG
+        text-lightToggle-text
+        dark:bg-primary-cardBG
+        dark:text-primary-cardText
+        border-t-4
+        border-primary-pink
+        rounded-md
+        flex
+        flex-col
+        gap-6
+        items-center
+        py-6
+        ">
+          <!-- social platform -->
+          <div class="flex gap-4 items-center">
+            <img src="/images/icon-instagram.svg" alt="Instagram">
+            <p>@nathanf</p>
+          </div>
+          <!-- followers num -->
+          <div class="flex flex-col items-center gap-2">
+            <h1 class="
+            text-6xl 
+            text-lightToggle-numClr
+            dark:text-white 
+            font-bold
+            ">11k</h1>
+            <p class="uppercase text-2xl">followers</p>
+          </div>
+          <!-- update div -->
+          <div class="flex gap-2 items-center text-primary-green">
+            <img src="/images/icon-up.svg" alt="">
+            <p class="text-lg">1099</p>
+            <p class="text-lg">Today</p>
+          </div>
+        </div>
+
+        <!-- box 4 -->
+        <div class="
+        bg-lightToggle-cardBG
+        text-lightToggle-text
+        dark:bg-primary-cardBG
+        dark:text-primary-cardText
+        border-t-4
+        border-primary-red
+        rounded-md
+        flex
+        flex-col
+        gap-6
+        items-center
+        py-6
+        ">
+          <!-- social platform -->
+          <div class="flex gap-4 items-center">
+            <img src="/images/icon-youtube.svg" alt="Youtube">
+            <p>@nathanf</p>
+          </div>
+          <!-- followers num -->
+          <div class="flex flex-col items-center gap-2">
+            <h1 class="
+            text-6xl 
+            text-lightToggle-numClr
+            dark:text-white 
+            font-bold
+            ">8239</h1>
+            <p class="uppercase text-2xl">subscribers</p>
+          </div>
+          <!-- update div -->
+          <div class="flex gap-2 items-center text-primary-red">
+            <img src="/images/icon-down.svg" alt="">
+            <p class="text-lg">144</p>
+            <p class="text-lg">Today</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- lower box div -->
+      <div class="
+      flex 
+      flex-col 
+      gap-4 
+      py-4
+      ">
+        <h2 class="
+        text-3xl 
+        text-lightToggle-text
+        dark:text-white 
+        my-4">Overview - Today</h2>
+
+        <!-- got the grid-flow-row-dense for tailwind site..it makes the layout adaptive -->
+        <div class="
+        flex
+        flex-col
+        gap-4
+        md:grid
+        md:grid-flow-row-dense
+        md:grid-cols-2
+        md:grid-rows-2
+        ">
+          <!-- facebook div -->
+          <div class="flex flex-col gap-4 lg:flex-row">
+
+            <!-- box 1 -->
+            <div class="
+            flex
+            flex-col  
+            flex-1
+            gap-8
+            bg-lightToggle-cardBG
+            text-lightToggle-text
+            dark:text-white 
+            dark:bg-primary-cardBG 
+            p-6">
+
+              <!-- Top part -->
+              <div class="flex justify-between">
+                <h3 class="
+                text-xl 
+                text-lightToggle-text
+                dark:text-primary-cardText
+                ">Page Views</h3>
+                <img src="/images/icon-facebook.svg" alt="Facebook">
+              </div>
+
+              <!-- Bottom part -->
+              <div class="flex justify-between items-center">
+                <h3 class="text-4xl font-bold text-lightToggle-numClr dark:text-white">87</h3>
+                <div class="flex gap-1 items-center">
+                  <img width="12" src="/images/icon-up.svg" alt="">
+                  <p class="text-lg text-primary-green">3%</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- box 2 -->
+            <div class="
+            flex
+            flex-col  
+            flex-1
+            gap-8
+            bg-lightToggle-cardBG
+            text-lightToggle-text
+            dark:text-white 
+            dark:bg-primary-cardBG 
+            p-6">
+
+              <!-- Top part -->
+              <div class="flex justify-between">
+                <h3 class="text-xl text-lightToggle-text dark:text-primary-cardText">Likes</h3>
+                <img src="/images/icon-facebook.svg" alt="Facebook">
+              </div>
+
+              <!-- Bottom part -->
+              <div class="flex justify-between items-center">
+                <h3 class="text-4xl font-bold text-lightToggle-numClr dark:text-white">52</h3>
+                <div class="flex gap-1 items-center">
+                  <img width="12" src="/images/icon-down.svg" alt="">
+                  <p class="text-lg text-primary-red">2%</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- instagram div -->
+          <div class="flex flex-col gap-4 lg:flex-row">
+
+            <!-- box 1 -->
+            <div class="
+            flex
+            flex-col  
+            flex-1
+            gap-8
+            bg-lightToggle-cardBG
+            text-lightToggle-text
+            dark:text-white 
+            dark:bg-primary-cardBG 
+            p-6">
+
+              <!-- Top part -->
+              <div class="flex justify-between">
+                <h3 class="text-xl text-lightToggle-text dark:text-primary-cardText">Profile Views</h3>
+                <img src="/images/icon-instagram.svg" alt="Instagram">
+              </div>
+
+              <!-- Bottom part -->
+              <div class="flex justify-between items-center">
+                <h3 class="text-4xl font-bold text-lightToggle-numClr dark:text-white">52k</h3>
+                <div class="flex gap-1 items-center">
+                  <img width="12" src="/images/icon-up.svg" alt="">
+                  <p class="text-lg text-primary-green">1375%</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- box 2 -->
+            <div class="
+            flex
+            flex-col 
+            flex-1 
+            gap-8
+            bg-lightToggle-cardBG
+            text-lightToggle-text
+            dark:text-white 
+            dark:bg-primary-cardBG 
+            p-6">
+
+              <!-- Top part -->
+              <div class="flex justify-between">
+                <h3 class="text-xl text-lightToggle-text dark:text-primary-cardText">Likes</h3>
+                <img src="/images/icon-instagram.svg" alt="Instagram">
+              </div>
+
+              <!-- Bottom part -->
+              <div class="flex justify-between items-center">
+                <h3 class="text-4xl font-bold text-lightToggle-numClr dark:text-white">5462</h3>
+                <div class="flex gap-1 items-center">
+                  <img width="12" src="/images/icon-up.svg" alt="">
+                  <p class="text-lg text-primary-green">2257%</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- twitter div -->
+          <div class="flex flex-col gap-4 lg:flex-row">
+
+            <!-- box 1 -->
+            <div class="
+            flex
+            flex-col
+            flex-1  
+            gap-8
+            bg-lightToggle-cardBG
+            text-lightToggle-text
+            dark:text-white 
+            dark:bg-primary-cardBG 
+            p-6">
+
+              <!-- Top part -->
+              <div class="flex justify-between">
+                <h3 class="text-xl text-lightToggle-text dark:text-primary-cardText">Retweets</h3>
+                <img src="/images/icon-twitter.svg" alt="Twitter">
+              </div>
+
+              <!-- Bottom part -->
+              <div class="flex justify-between items-center">
+                <h3 class="text-4xl font-bold text-lightToggle-numClr dark:text-white">117</h3>
+                <div class="flex gap-1 items-center">
+                  <img width="12" src="/images/icon-up.svg" alt="">
+                  <p class="text-lg text-primary-green">303%</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- box 2 -->
+            <div class="
+            flex
+            flex-col
+            flex-1  
+            gap-8
+            bg-lightToggle-cardBG
+            text-lightToggle-text
+            dark:text-white 
+            dark:bg-primary-cardBG 
+            p-6">
+
+              <!-- Top part -->
+              <div class="flex justify-between">
+                <h3 class="text-xl text-lightToggle-text dark:text-primary-cardText">Likes</h3>
+                <img src="/images/icon-twitter.svg" alt="Twitter">
+              </div>
+
+              <!-- Bottom part -->
+              <div class="flex justify-between items-center">
+                <h3 class="text-4xl font-bold text-lightToggle-numClr dark:text-white">507</h3>
+                <div class="flex gap-1 items-center">
+                  <img width="12" src="/images/icon-up.svg" alt="">
+                  <p class="text-lg text-primary-green">553%</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- youtube div -->
+          <div class="flex flex-col gap-4 lg:flex-row">
+
+            <!-- box 1 -->
+            <div class="
+            flex
+            flex-col
+            flex-1  
+            gap-8
+            bg-lightToggle-cardBG
+            text-lightToggle-text
+            dark:text-white 
+            dark:bg-primary-cardBG 
+            p-6">
+
+              <!-- Top part -->
+              <div class="flex justify-between">
+                <h3 class="text-xl text-lightToggle-text dark:text-primary-cardText">Total Views</h3>
+                <img src="/images/icon-youtube.svg" alt="Youtube">
+              </div>
+
+              <!-- Bottom part -->
+              <div class="flex justify-between items-center">
+                <h3 class="text-4xl font-bold text-lightToggle-numClr dark:text-white">1407</h3>
+                <div class="flex gap-1 items-center">
+                  <img width="12" src="/images/icon-down.svg" alt="">
+                  <p class="text-lg text-primary-red">12%</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- box 2 -->
+            <div class="
+            flex
+            flex-col
+            flex-1  
+            gap-8
+            bg-lightToggle-cardBG
+            text-lightToggle-text
+            dark:text-white 
+            dark:bg-primary-cardBG 
+            p-6">
+
+              <!-- Top part -->
+              <div class="flex justify-between">
+                <h3 class="text-xl text-lightToggle-text dark:text-primary-cardText">Likes</h3>
+                <img src="/images/icon-youtube.svg" alt="Youtube">
+              </div>
+
+              <!-- Bottom part -->
+              <div class="flex justify-between items-center">
+                <h3 class="text-4xl font-bold text-lightToggle-numClr dark:text-white">107</h3>
+                <div class="flex gap-1 items-center">
+                  <img width="12" src="/images/icon-down.svg" alt="">
+                  <p class="text-lg text-primary-red">19%</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        
+      </div>
+
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
