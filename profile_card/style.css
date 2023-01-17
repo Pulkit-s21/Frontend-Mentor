@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+     --dark-cyan: hsl(185, 75%, 39%);
+     --very-darkBlue: hsl(229, 23%, 23%);
+     --gray-blue: hsl(227, 10%, 46%);
+     --dark-gray: hsl(0, 0%, 59%);
+     --fw-light: 400;
+     --fw-bold: 700; 
+}
+
+body{
+     font-family: 'Kumbh Sans', sans-serif;
+     background: var(--dark-cyan);
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 1.5rem;
+}
+
+.container{
+     margin: 0 auto;
+     padding: 0;
+     max-width: 30rem;
+     background-color: #fff;
+     border-radius: 1.3rem;
+     overflow: hidden;
+}
+
+.top .main{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.top .victor{
+     border-radius: 50%;
+     border: 5px solid #fff;
+     position: relative;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 28%;
+     object-fit: cover;
+}
+
+.text-component{
+     text-align: center;
+}
+
+.text-component span{
+     font-size: 1.2rem;
+     font-weight: var(--fw-light);
+}
+
+.text-component .name{
+     margin-top: -5%;
+     font-size: 1.4rem;
+     font-weight: var(--fw-bold);
+     color: var(--very-darkBlue);
+}
+
+.place p{
+     font-size: 1.1rem;
+     color: var(--dark-gray);
+}
+
+.footer{
+     border-top: 1px solid var(--dark-gray);
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+}
+
+.footer div{
+     padding: 1rem;
+}
+
+.footer div .num{
+     font-size: 1.3rem;
+     font-weight: var(--fw-bold);
+     color: var(--very-darkBlue);
+}
+
+.footer div .text{
+     font-weight: var(--fw-light);
+}
+
+@media (max-width: 400px){
+     .top .victor{
+          width: 40%;
+     }
+
+     .text-component .name{
+          font-size: 1rem;
+     }
+
+     .text-component span{
+          font-size: 0.9rem;
+     }
+
+     .footer div .num{
+          font-size: 1rem;
+     }
+
+     .footer{
+          grid-template-columns: repeat(1,1fr);
+     }
+}
