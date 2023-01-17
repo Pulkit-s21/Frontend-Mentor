@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+     --dark-cyan: hsl(158, 36%, 37%);
+     --Vdark-cyan: hsl(159, 44%, 19%);
+     --cream: hsl(30, 38%, 92%);
+     --very-dark: hsl(212, 21%, 14%);
+     --dark-grayBlue: hsl(228, 12%, 48%);
+     --white: hsl(0, 0%, 100%);
+     --fw-light: 500;
+     --fw-bold: 700;
+}
+
+body{
+     background-color: var(--cream);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     font-size: 14px;
+}
+
+img{
+     display: block;
+     max-width: 100%;
+}
+
+.card{
+     width: 95%;
+     max-width: 30em;
+     overflow: hidden;
+     border-radius: 0.625em;
+}
+
+.card-body{
+     padding: 1.5em;
+}
+
+.card-body .type{
+     font-weight: var(--fw-light);
+     text-transform: uppercase;
+     letter-spacing: .25em;
+     font-family: 'Montserrat', sans-serif;
+     color: var(--dark-grayBlue);
+}
+
+.card-body h1{
+     font-size: 2em;
+     font-weight: var(--fw-bold);
+     color: var(--very-dark);
+     font-family: 'Fraunces', serif;
+}
+
+.card-body p{
+     font-size: 1.2em;
+     color: var(--dark-grayBlue);
+     font-family: 'Montserrat', sans-serif;
+}
+
+.price-area{
+     margin: 2.5rem 0 .2rem 0;
+     display: flex;
+     align-items: center;
+}
+
+.price-area p:first-child{
+     color: var(--dark-cyan);
+     font-weight: var(--fw-bold);
+     font-size: 1.9em;
+     margin-right: 1em;
+     font-family: 'Fraunces', serif;
+}
+
+.price-area p:last-child{
+     color: var(--dark-grayBlue);
+     font-size: 1.12em;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: .75rem;
+     width: 100%;
+     color: var(--white);
+     background-color: var(--dark-cyan);
+     border-radius: .5em;
+}
+
+.btn span{
+     color: var(--white);
+     margin-left: 1em;
+     font-size: 1.12em;
+}
+
+.btn:hover{
+     color: var(--white);
+     background-color: var(--Vdark-cyan);
+}
+
+@media (min-width: 750px){
+     .card{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         max-width: 50em;
+     }
+     
+     .card-img img{
+          height: 100%;
+     }
+}
