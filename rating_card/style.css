@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background: rgba(20,21,25,255);
+}
+
+img{
+     width: 100%;
+}
+
+p{
+     font-size: 1.2rem;
+}
+
+.card{
+     background: rgba(31,38,48,255);
+     color: #fff;
+     border-radius: 20px;
+}
+
+.card-img-top{
+     width: 35px;
+     background: rgb(69, 72, 84);
+     border-radius: 50%;
+     padding: 10px;
+}
+
+#thankyou{
+     width: 80%;
+     margin: 0 auto;
+}
+
+button{
+     transition: all 0.2s ease-in-out;
+}
+
+.btn{
+     border-radius: 50%;
+}
+
+.btn-warning{
+     background: rgba(255,117,19,255);
+}
+
+.btn-submit,
+.rate-again{
+     width: 100%;
+     border-radius: 20px;
+     transition: all .2s ease;
+     border: none;
+}
+
+.btn-submit:hover,
+.rate-again:hover{
+     background-color: #fff;
+     color: orangered;
+}
+
+.selected{
+     background-color: rgba(255,117,19,255);
+     color: #fff;
+}
+
+.selected:hover{
+     color: #fff;
+}
+
+.hidden{
+     display: none;
+}
+
+.card-rating{
+     width: 90%;
+     color: rgb(255, 115, 0);
+     border-radius: 20px;
+     background: rgba(39,46,56,255);
+}
