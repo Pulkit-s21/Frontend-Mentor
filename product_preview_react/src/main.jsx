@@ -31,7 +31,6 @@ const Main = () => {
           rounded-xl
           overflow-hidden
           grid
-          
           grid-cols-1
           max-w-[25em]
           md:grid-cols-2
