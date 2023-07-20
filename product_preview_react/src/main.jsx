@@ -24,7 +24,7 @@ const Main = () => {
   return (
     <>
       {loading ? (
-        <h1>...</h1>
+        <h1 className="text-black">Loading</h1>
       ) : (
         <div
           className="
@@ -64,13 +64,13 @@ const Main = () => {
               {datas.preview}
             </p>
             <h2 className="font-bold font-Fraunces text-secondary-dblue text-2xl">{datas.name}</h2>
-            <p className="text-sm font-Montserrat text-gray-500">
+            <p className="text-sm md:text-md font-Montserrat text-gray-500">
               {datas.description}{" "}
               <span className="uppercase text-primary-dcyan font-bold">{datas.company}</span>.
             </p>
 
             <div className="flex items-center gap-4 price-container">
-              <p className="text-2xl font-Fraunces text-primary-dcyan">
+              <p className="text-2xl md:text-3xl font-Fraunces text-primary-dcyan">
                 {datas.price}
               </p>
               <p
