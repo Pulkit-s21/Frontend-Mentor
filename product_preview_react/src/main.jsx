@@ -15,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
 const Main = () => {
   const [loading, setLoading] = useState(true)
+  const [clicked, setClicked] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
@@ -103,9 +104,14 @@ const Main = () => {
               justify-center
               gap-4
               "
+              onClick={() =>
+                setTimeout(() => {
+                  setClicked(!clicked)
+                }, 500)
+              }
             >
               <img className="w-5" src={cartsvg} alt="Cart svg" />
-              {datas.cart}
+              {clicked ? datas.added : datas.cart}
             </button>
           </div>
         </div>
