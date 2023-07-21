@@ -1,0 +1,10 @@
+{
+  "title": "order summary",
+  "description": "You can now listen to millions of songs, audiobooks and podcasts on any devices anywhere you like!",
+  "plan_name": "Annual Plan",
+  "price": "$59.99",
+  "time_period": "year",
+  "plan_btn": "change",
+  "payment_btn": "Proceed to Payment",
+  "cancel_btn": "cancel order"
+}
