@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+    .rateBtn{
+      @apply bg-gray-500 px-4 py-2 rounded-full hover:cursor-pointer hover:bg-btn transition-colors duration-200;
+    }
+
+    .submitBtn{
+      @apply bg-btn rounded-full mt-4 py-2 transition-colors duration-200 active:bg-white active:text-btn
+    }
+
+@tailwind utilities;

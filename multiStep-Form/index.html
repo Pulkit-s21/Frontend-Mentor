@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="
+  font-Ubuntu
+  bg-primary-lightBlue
+  ">
+    <!-- * Step 1 -->
+    <header>
+      <div class="
+      top
+      py-20
+      text-white
+      justify-center
+      flex
+      gap-4
+      px-12
+      ">
+        <button class="pageNum active">1</button>
+        <button class="pageNum">2</button>
+        <button class="pageNum">3</button>
+        <button class="pageNum">4</button>
+      </div>
+    </header>
+
+    <section class="
+    px-3
+    absolute
+    top-[10rem]
+    ">
+      <div class="
+      flex
+      flex-col
+      gap-2
+      bg-white
+      p-6
+      py-8
+      rounded-xl
+      ">
+        <h1 class="text-3xl font-semibold text-primary-marineBlue">
+          Personal info
+        </h1>
+        <p class="text-lg text-gray-400">
+          Please provide your name,email address and phone number.
+        </p>
+        <form class="flex flex-col gap-4 my-4" action="">
+          <label class="flex flex-col text-primary-marineBlue" for="name">
+            Name
+            <input class="border-[0.5px] text-lg rounded-md p-2 border-primary-marineBlue text-gray-500 outline-none" placeholder="e.g. Stephen King" required type="text" id="name">
+          </label>
+
+          <label class="flex flex-col text-primary-marineBlue" for="email">
+            Email Address
+            <input class="border-[0.5px] text-lg rounded-md p-2 border-primary-marineBlue text-gray-500 outline-none" placeholder="e.g. stephenking@lorem.com" required type="email" id="email">
+          </label>
+
+          <label class="flex flex-col text-primary-marineBlue" for="phone">
+            Phone Number
+            <input class="border-[0.5px] text-lg rounded-md p-2 border-primary-marineBlue text-gray-500 outline-none  " placeholder="e.g. +1 234 567 890" required type="number" id="phone">
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
