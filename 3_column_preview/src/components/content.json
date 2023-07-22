@@ -1,0 +1,17 @@
+[
+    {
+        "title": "sedans",
+        "description": "Choose a sedan for its affordability and excellen fuel economy. Ideal for cruising in the city or on your next road trip.",
+        "radius": "6% 6% 0 0"
+    },
+    {
+        "title": "suvs",
+        "description": "Take an SUV for its spacious interior, power and versatility. Perfect for your next family vacation and off-road adventures.",
+        "radius": "0 0 0 0"
+    },
+    {
+        "title": "luxury",
+        "description": "Cruise in the best car brands without the bloated prices. Enjoy the enhanced confort of a luxury rental and arrive in style.",
+        "radius": "0 0 6% 6%"
+    }
+]
