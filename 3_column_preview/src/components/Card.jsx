@@ -7,7 +7,7 @@ const Card = (props) => {
   return (
     <div
       className={`
-    ${props.bgClr}
+    bg-${props.clr}
     grid
     grid-cols-1
     gap-10
@@ -23,7 +23,7 @@ const Card = (props) => {
       <h1 className="font-Big_Shoulder uppercase">{props.title}</h1>
       <p className="font-Lexend">{props.description}</p>
       <button
-        className={`bg-secondary-vlGray border-none ${props.textClr} font-Lexend`}
+        className={`bg-secondary-vlGray border-none text-${props.clr} font-Lexend`}
         onClick={() => {
           setTimeout(() => {
             setLearning(!learning)

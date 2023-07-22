@@ -17,8 +17,7 @@ const Major = () => {
         cartype={sedan}
         title={datas[0].title}
         description={datas[0].description}
-        bgClr="bg-primary-bOrange"
-        textClr="text-primary-bOrange"
+        clr="primary-bOrange"
         border="rounded-l-md"
       />
 
@@ -26,16 +25,14 @@ const Major = () => {
         cartype={suvs}
         title={datas[1].title}
         description={datas[1].description}
-        bgClr="bg-primary-dCyan"
-        textClr="text-primary-dCyan"
+        clr="primary-dCyan"
       />
 
       <Card
         cartype={luxury}
         title={datas[2].title}
         description={datas[2].description}
-        bgClr="bg-primary-vdCyan"
-        textClr="text-primary-vdCyan"
+        clr="primary-vdCyan"
         border="rounded-r-md"
       />
     </div>
