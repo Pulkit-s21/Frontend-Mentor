@@ -43,7 +43,7 @@ export const SummaryCard = () => {
       />
 
       <button
-        className="bg-secondary-grayBlue border-none rounded-full text-secondary-paleBlue font-Hanken"
+        className="bg-secondary-grayBlue border-none rounded-full text-secondary-paleBlue font-Hanken text-lg md:text-xl"
         onClick={() => {
           setTimeout(() => {
             setClicked(!clicked)

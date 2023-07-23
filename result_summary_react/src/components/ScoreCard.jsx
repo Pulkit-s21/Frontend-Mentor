@@ -12,7 +12,7 @@ export const ScoreCard = () => {
     rounded-3xl
     "
     >
-      <p className="capitalize text-secondary-lavender font-Hanken">
+      <p className="capitalize text-secondary-lavender font-Hanken md:text-xl">
         {datas.heading}
       </p>
       <div className="
@@ -30,10 +30,10 @@ export const ScoreCard = () => {
         <p className="text-6xl font-Hanken text-white">{datas.score}</p>
         <p className="text-secondary-lavender">of 100</p>
       </div>
-      <h2 className="text-white capitalize text-2xl font-Hanken font-bold">
+      <h2 className="text-white capitalize text-2xl md:text-3xl font-Hanken font-bold">
         {datas.review}
       </h2>
-      <p className="text-secondary-lavender font-Hanken">{datas.description}</p>
+      <p className="text-secondary-lavender font-Hanken md:text-lg">{datas.description}</p>
     </div>
   )
 }
