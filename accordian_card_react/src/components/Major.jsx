@@ -17,7 +17,6 @@ export const Major = () => {
     rounded-2xl 
     shadow-secondary-vdarkGray 
     shadow-xl
-    p-4
     "
     >
       <img
@@ -33,7 +32,7 @@ export const Major = () => {
         src={hero}
         alt={hero}
       />
-      <div className="grid grid-cols-1 gap-2 text-center">
+      <div className="grid grid-cols-1 gap-2 text-center p-4">
         <h2 className="font-Kumbh text-primary-darkBlue text-4xl mb-4 lg:text-5xl">
           FAQ
         </h2>

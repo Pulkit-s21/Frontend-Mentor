@@ -39,10 +39,16 @@ export const Accordian = (props) => {
         </svg>
       </div>
       {/* ans */}
-      <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40 text-secondary-darkGray">
-        <div className="">
+      <div className=" 
+      overflow-hidden 
+      transition-all 
+      duration-500 
+      max-h-0 
+      peer-checked:max-h-40 
+      text-secondary-darkGray
+      lg:text-lg
+      ">
           <p>{props.ans}</p>
-        </div>
       </div>
     </div>
   )
