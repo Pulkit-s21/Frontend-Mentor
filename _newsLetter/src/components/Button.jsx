@@ -25,7 +25,7 @@ export const Button = (props) => {
           e.preventDefault()
           emailValidator()
         }}
-        className="text-sm md:text-lg p-4 text-white hover:bg-gradient-to-r  from-red-500 to-orange-600 outline-none border-none"
+        className="text-sm md:text-lg p-4 bg-Btn text-white hover:bg-gradient-to-r  from-red-500 to-orange-600 outline-none border-none"
       >
         {props.text}
       </button>
